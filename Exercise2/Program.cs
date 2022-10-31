@@ -100,7 +100,7 @@ namespace Exercise2
                     ctr++;
                     if (lis[i] == item)
                     {
-                        Console.WriteLine("\n" + item.ToString() + "found st position " + (i + 1).ToString());
+                        Console.WriteLine("\n" + item.ToString() + "found at position " + (i + 1).ToString());
                         break;
                     }
                     
