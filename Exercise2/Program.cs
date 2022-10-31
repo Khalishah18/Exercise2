@@ -52,6 +52,10 @@ namespace Exercise2
                 //accept the number to be searched
                 Console.Write("\n Enter element want you to search : ");
                 int item = Convert.ToInt32(Console.ReadLine());
+
+                //apply binary search
+                int lowerbound = 0;
+                int upperbound = n - 1;
             }
         }
         static void Main(string[] args)
