@@ -82,6 +82,11 @@ namespace Exercise2
                 ;
             } while ((ch == 'y') || (ch == 'Y'));
         }
+        public void LinearSearch()
+        {
+            char ch;
+
+        }
         static void Main(string[] args)
         {
         }
