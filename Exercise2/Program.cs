@@ -10,7 +10,8 @@ namespace Exercise2
     class Program
     {
         //Array to be searched //Max number of data 79+20-2x15+10+20 = 99
-        int[] arr = new int[99];
+        //arr = lis (nickname)
+        int[] lis = new int[99];
 
         //Number of elements in the array
         int n;
@@ -40,7 +41,7 @@ namespace Exercise2
             {
                 Console.Write("<" + (i + 1) + ">");
                 String s1 = Console.ReadLine();
-                arr[i] = Int32.Parse(s1);
+                lis[i] = Int32.Parse(s1);
             }
         }
 
@@ -62,16 +63,16 @@ namespace Exercise2
                 int ctr = 1;
 
                 //loop to search for the elements in the array
-                while ((item != arr[mid]) && (lowerbound <= upperbound))
+                while ((item != lis[mid]) && (lowerbound <= upperbound))
                 {
-                    if (item > arr[mid])
+                    if (item > lis[mid])
                         lowerbound = mid + 1;
                     else
                         upperbound = mid - 1;
                     mid = (lowerbound + upperbound) / 2;
                     ctr++;
                 }
-                if (item == arr[mid])
+                if (item == lis[mid])
                     Console.WriteLine("\n" + item.ToString() + " found at position " + (mid + 1).ToString());
                 else
                     Console.WriteLine("\n" + item.ToString() + " not found iin the array \n");
@@ -97,7 +98,7 @@ namespace Exercise2
                 for (i = 0; i < n; i++)
                 {
                     ctr++;
-                    if (arr[i] == item)
+                    if (lis[i] == item)
                     {
                         Console.WriteLine("\n" + item.ToString() + "found st position " + (i + 1).ToString());
                         break;
@@ -127,7 +128,7 @@ namespace Exercise2
                 
                 switch(pilihanmenu)
                 {
-                    case 1;
+                    case 1:
                         Console.WriteLine("");
                         Console.WriteLine(". . .  . . . . . . . . .");
                         Console.WriteLine("Linear Search");
