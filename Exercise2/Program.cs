@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exercise2
 {
-    internal class Program
+    class Program
     {
+        //Array to be searched //Max number of data 79+20-2x15+10+20 = 99
+        int[] arr = new int[99];
+
         static void Main(string[] args)
         {
         }
