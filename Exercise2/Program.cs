@@ -44,7 +44,14 @@ namespace Exercise2
             }
         }
 
-        
+        public void BinarySearch()
+        {
+            char ch;
+            do
+            {
+                
+            }
+        }
         static void Main(string[] args)
         {
         }
