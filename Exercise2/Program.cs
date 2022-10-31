@@ -49,7 +49,9 @@ namespace Exercise2
             char ch;
             do
             {
-                
+                //accept the number to be searched
+                Console.Write("\n Enter element want you to search : ");
+                int item = Convert.ToInt32(Console.ReadLine());
             }
         }
         static void Main(string[] args)
