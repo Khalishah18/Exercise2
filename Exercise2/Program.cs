@@ -14,6 +14,9 @@ namespace Exercise2
 
         //Number of elements in the array
         int n;
+
+        //Get the number of elements to store in the array
+        int i;
         static void Main(string[] args)
         {
         }
